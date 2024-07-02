@@ -5,7 +5,7 @@
 
 ## Creación de una WEB para aprender desarrollo web con Python puro y Reflex desde cero.
 
-### Proyecto realizado durante emisiones en directo desde [Twitch](https://twitch.tv/mouredev)
+### Proyecto realizado por [mouredev](https://github.com/mouredev) durante emisiones en directo desde [Twitch](https://twitch.tv/mouredev)
 
 ## Curso de Python Web: Tutorial en vídeo
 
