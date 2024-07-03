@@ -1,5 +1,5 @@
 import reflex as rx
 
 config = rx.Config(
-    app_name="python-web",
+    app_name="python_web",
 )
