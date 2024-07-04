@@ -3,12 +3,13 @@ import reflex as rx
 def navbar() -> rx.Component:
     return rx.hstack(
         rx.text(
-            "hitbit",
+            "hitbit Barra navegacion",
             height="40px"
         ),
         position="sticky",
         bg="blue",
         padding_x="16px",
         padding_y="8px",
-        z_index="999"
+        z_index="999",
+        top="0"
     )
