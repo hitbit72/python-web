@@ -10,5 +10,5 @@ def footer() -> rx.Component:
             href="https://www.linkedin.com/in/jtl-35b901294",
             is_external=True
         ),
-        rx.text("BUILDING SOFTWARE FROM ANDALUCIA")
+        rx.text("BUILDING SOFTWARE FROM ANDALUCIA", as_="div"),
     )

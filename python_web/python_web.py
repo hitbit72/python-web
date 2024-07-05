@@ -18,29 +18,12 @@ def index() -> rx.Component:
         header(),
         links(),
         footer(),
-        align_items = "center",
-        justify_content = "center"
+        align = "center"
     )
 
-def prueba() -> rx.Component:
-    return rx.box(
-        rx.vstack(
-            rx.box(
-                "Ejemplo",
-                bg="red",
-                width="20%"
-            ),
-            rx.box(
-                "Ejemplo2",
-                bg="orange"
-            ),
-            align_items = "center",
-            justify_content = "center"
-        )
-    )
 
 # styles=styles.BASE_STYLE
-app = rx.App(styles=styles.BASE_STYLE)
+app = rx.App(style=styles.BASE_STYLE)
 app.add_page(index)
 
 
