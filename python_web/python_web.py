@@ -13,12 +13,18 @@ class state(rx.State):
 
 # Frontend
 def index() -> rx.Component:
-    return rx.vstack(
+    return rx.box(
         navbar(),
-        header(),
-        links(),
-        footer(),
-        align = "center"
+        rx.center(
+            rx.vstack(
+                header(),
+                links(),
+                max_width = styles.MAX_WIDTH,
+                width = "100%",
+                margin_y = styles.Size.BIG.value
+            ),
+        ),
+        footer()
     )
 
 
