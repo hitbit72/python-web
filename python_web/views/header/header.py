@@ -2,7 +2,8 @@ import reflex as rx
 from python_web.components.link_icon import link_icon
 from python_web.components.info_text import info_text
 from python_web.styles.styles import Spacing as Spacing
-
+from python_web.styles.styles import Size as Size
+from python_web.styles.colors import TextColor as TextColor
 
 def header() -> rx.Component:
     return rx.vstack(
@@ -29,13 +30,16 @@ def header() -> rx.Component:
         rx.flex(
             info_text("+3", "Años de experiencia"),
             rx.spacer(),
-            info_text("+3", "Años de experiencia"),
+            info_text("+50", "Aplicaciones creadas"),
             rx.spacer(),
-            info_text("+3", "Años de experiencia"),
+            info_text("1k", "Seguidores"),
             width="100%"
         ),
         rx.text(
-            "Soy programador freelance full-stack de python y PHP desde hace más de 5 años.",
+            """Soy programador freelance full-stack de python y PHP desde hace más de 5 años.
+            Aquí podrás encontrar todos mis enlaces de interés. Bienbenid@s""",
+            color = TextColor.BODY.value,
+            font_size = Size.MEDIUM.value
         ),
         spacing=Spacing.BIG.value,
         align_items="start"

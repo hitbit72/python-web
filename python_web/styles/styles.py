@@ -1,8 +1,10 @@
 import reflex as rx
 from enum import Enum
+from .colors import Color as Color
+from .colors import TextColor as TextColor
 
 # Contants Max width de la web
-MAX_WIDTH = "600px"
+MAX_WIDTH = "560px"
 
 # Sizes
 class Size(Enum):
@@ -23,6 +25,7 @@ class Spacing(Enum):
 
 # Styles default
 BASE_STYLE = {
+    "background_color": Color.BACKGROUND.value,
     rx.vstack: {
         "align_items": "center",
     },
@@ -31,7 +34,12 @@ BASE_STYLE = {
         "height": "100%",
         "display": "block",
         "padding": Size.SMALL.value,
-        "border_radius": Size.DEFAULT.value
+        "border_radius": Size.DEFAULT.value,
+        "color": TextColor.HEADER.value,
+        "background_color": Color.CONTENT.value,
+        "_hover": {
+            "background_color": Color.SECONDARY.value
+        }
     },
     rx.link: {
         "text_decoration": "none",
@@ -39,17 +47,21 @@ BASE_STYLE = {
     }
 }
 
+
 title_style = dict(
     width = "100%",
     padding_top = Size.DEFAULT.value,
+    color = TextColor.HEADER.value
 )
 
 
 button_title_style = dict(
     font_size = Size.DEFAULT.value,
+    color = TextColor.HEADER.value
 )
 
 button_body_style = dict(
     font_size = Size.MEDIUM.value,
+    color = TextColor.BODY.value
 )
 

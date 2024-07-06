@@ -18,8 +18,19 @@ def links() -> rx.Component:
             "https://www.youtube.com"
         ),
         link_button(
+            "Discord",
+            "Chat de los colegas",
+            "https://discrod.gg"
+        ),
+        title("Recursos"),
+        link_button(
+            "Linkedin",
+            "datos de linkedin",
+            "https://www.linkedin.com/in/jtl-35b901294/"
+        ),
+        link_button(
             "Youtube",
-            "canal secundario",
+            "canal principal",
             "https://www.youtube.com"
         ),
         link_button(
