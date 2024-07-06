@@ -24,7 +24,7 @@ def index() -> rx.Component:
                 margin_y = styles.Size.BIG.value
             ),
         ),
-        footer()
+        footer(),
     )
 
 

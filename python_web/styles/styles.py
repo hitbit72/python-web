@@ -11,13 +11,23 @@ class Size(Enum):
     DEFAULT = "1em"
     BIG = "2em"
 
+class Spacing(Enum):
+    ZERO = "0"
+    VERY_SMALL = "1"
+    SMALL = "3"
+    DEFAULT = "4"
+    LARGE = "5"
+    MEDIUM = "6"
+    BIG = "7"
+    VERY_BIG = "9"
+
 # Styles default
 BASE_STYLE = {
     rx.vstack: {
         "align_items": "center",
     },
     rx.button: {
-        "width" : "100%",
+        "width": "100%",
         "height": "100%",
         "display": "block",
         "padding": Size.SMALL.value,
@@ -25,7 +35,7 @@ BASE_STYLE = {
     },
     rx.link: {
         "text_decoration": "none",
-        "_hover" : {}
+        "_hover": {}
     }
 }
 
@@ -33,6 +43,7 @@ title_style = dict(
     width = "100%",
     padding_top = Size.DEFAULT.value,
 )
+
 
 button_title_style = dict(
     font_size = Size.DEFAULT.value,

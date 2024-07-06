@@ -1,6 +1,7 @@
 import reflex as rx
 from python_web.components.link_button import link_button
 from python_web.components.title import title
+from python_web.styles.styles import Spacing as Spacing
 
 
 def links() -> rx.Component:
@@ -26,5 +27,6 @@ def links() -> rx.Component:
             "Chat de los colegas",
             "https://discrod.gg"
         ),
-        width = "100%"
+        width = "100%",
+        spacing=Spacing.SMALL.value
     )
