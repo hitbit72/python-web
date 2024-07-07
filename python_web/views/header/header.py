@@ -1,9 +1,12 @@
 import reflex as rx
+import python_web.styles.styles as styles
 from python_web.components.link_icon import link_icon
 from python_web.components.info_text import info_text
+from python_web.components.title import title
 from python_web.styles.styles import Spacing as Spacing
 from python_web.styles.styles import Size as Size
 from python_web.styles.colors import TextColor as TextColor
+from python_web.styles.fonts import Font as Font
 
 def header() -> rx.Component:
     return rx.vstack(
@@ -12,10 +15,13 @@ def header() -> rx.Component:
             rx.vstack(
                 rx.heading(
                     "Jorge Tejada",
-                    size = Spacing.LARGE.value
+                    style = styles.header_title_style,
+                    size = Spacing.MEDIUM.value
                 ),
                 rx.text(
-                    "@hitbit"
+                    "@hitbit72",
+                    margin_top = Size.ZERO.value,
+                    color = TextColor.BODY.value
                 ),
                 rx.hstack(
                     link_icon("youtube", "https://www.google.com"),

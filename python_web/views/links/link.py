@@ -38,6 +38,17 @@ def links() -> rx.Component:
             "Chat de los colegas",
             "https://discrod.gg"
         ),
+        title("Contacto"),
+        link_button(
+            "MyPublicInbox",
+            "Respuesta rápida y con preferencia",
+            "https://www.youtube.com"
+        ),
+        link_button(
+            "Email",
+            "correo electrónico",
+            "mailto: corro@correo.com"
+        ),
         width = "100%",
         spacing=Spacing.SMALL.value
     )
