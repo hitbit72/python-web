@@ -1,8 +1,8 @@
 import reflex as rx
 import python_web.styles.styles as styles
 from python_web.components.navbar import navbar
-from python_web.views.header.header import header
-from python_web.views.links.link import links
+from python_web.views.header import header
+from python_web.views.link import links
 from python_web.components.footer import footer
 
 

@@ -7,13 +7,15 @@ def footer() -> rx.Component:
     return rx.vstack(
         rx.image(
             src="favicon.ico",
-            padding_bottom=Size.MEDIUM.value
+            padding_bottom=Size.MEDIUM.value,
+            height = Size.VERY_BIG.value
         ),
         rx.link(
             f"(c) 2023-{datetime.date.today().year} HITBIT by Jorge Tejada V1.",
             href="https://www.linkedin.com/in/jtl-35b901294",
              is_external=True,
-             font_size=Size.MEDIUM.value
+             font_size=Size.MEDIUM.value,
+             color = TextColor.FOOTER.value
         ),
         rx.text(
             "BUILDING SOFTWARE WITH ♥ FROM ANDALUCIA",
