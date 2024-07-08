@@ -3,6 +3,7 @@ import python_web.styles.styles as styles
 from python_web.components.navbar import navbar
 from python_web.views.header import header
 from python_web.views.link import links
+from python_web.views.sponsors import sponsors
 from python_web.components.footer import footer
 
 
@@ -19,6 +20,7 @@ def index() -> rx.Component:
             rx.vstack(
                 header(),
                 links(),
+                sponsors(),
                 max_width = styles.MAX_WIDTH,
                 width = "100%",
                 margin_y = styles.Size.BIG.value,
@@ -30,7 +32,12 @@ def index() -> rx.Component:
 
 
 app = rx.App(style=styles.BASE_STYLE)
-app.add_page(index)
+app.add_page(
+    index,
+    title = "Hitbit72 | Diseño web y programación de aplicaciones",
+    description = "Hola, mi nombre es Jorge Tejada. Soy desarrollador freelance full-stack",
+    image = "avatar.jpg"
+)
 
 
 

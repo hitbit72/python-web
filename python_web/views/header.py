@@ -14,13 +14,12 @@ def header() -> rx.Component:
             rx.avatar(
                 #fallback="JT",
                 radius="full",
-                size="6",
+                size=Spacing.MEDIUM.value,
                 src = "avatar.jpg",
-                color = TextColor.FOOTER.value,
-                bg = Color.PRIMARY.value,
-                padding = "3px",
-                #border = "4px",
-                #border_color = "red"
+                color = TextColor.BODY.value,
+                bg = Color.CONTENT.value,
+                padding = "2px",
+                border=f"4px solid {Color.PRIMARY.value}"
             ),
             rx.vstack(
                 rx.heading(
@@ -34,12 +33,13 @@ def header() -> rx.Component:
                     color = TextColor.BODY.value
                 ),
                 rx.hstack(
-                    link_icon("youtube", "https://www.google.com"),
-                    link_icon("message-circle-more", "https://www.google.com"),
-                    link_icon("twitch", "https://www.google.com"),
+                    link_icon("icons/youtube.svg", "https://www.google.com"),
+                    link_icon("icons/github.svg", "https://github.com/hitbit72"),
+                    link_icon("icons/twitch.svg", "https://www.google.com"),
                 ),
                 row_gap = "0",
                 align_items="start",
+                spacing=Spacing.DEFAULT.value,
             ),
             spacing=Spacing.BIG.value,
         ),

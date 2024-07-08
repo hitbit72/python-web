@@ -4,6 +4,9 @@ from .colors import Color as Color
 from .colors import TextColor as TextColor
 from .fonts import Font as Font
 
+
+# iconos: https://fontawesome.com
+
 # Contants Max width de la web
 MAX_WIDTH = "560px"
 
@@ -68,7 +71,7 @@ title_style = dict(
     width = "100%",
     padding_top = Size.DEFAULT.value,
     font_family = Font.TITLE.value,
-    font_size = Size.LARGE.value,
+    font_size = Size.BIG_MEDIUM.value,
     color = TextColor.HEADER.value
 )
 
