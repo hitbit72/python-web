@@ -14,7 +14,7 @@ def header() -> rx.Component:
             rx.avatar(
                 #fallback="JT",
                 radius="full",
-                size=Spacing.MEDIUM.value,
+                size=Spacing.BIG.value,
                 src = "avatar.jpg",
                 color = TextColor.BODY.value,
                 bg = Color.CONTENT.value,
@@ -30,6 +30,7 @@ def header() -> rx.Component:
                 rx.text(
                     "@hitbit72",
                     margin_top = Size.ZERO.value,
+                    margin_bottom = Size.MEDIUM.value,
                     color = TextColor.BODY.value
                 ),
                 rx.hstack(
@@ -37,9 +38,8 @@ def header() -> rx.Component:
                     link_icon("icons/github.svg", "https://github.com/hitbit72"),
                     link_icon("icons/twitch.svg", "https://www.google.com"),
                 ),
-                row_gap = "0",
                 align_items="start",
-                spacing=Spacing.DEFAULT.value,
+                spacing=Spacing.VERY_SMALL.value,
             ),
             spacing=Spacing.BIG.value,
         ),
