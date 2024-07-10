@@ -6,17 +6,22 @@ from python_web.styles.styles import Spacing as Spacing
 def sponsors() -> rx.Component:
     return rx.vstack(
         title("Colaboran"),
-        rx.hstack(
+        rx.flex(
             link_sponsors(
                 "elgato.png",
-                url = ""
+                "",
+                "Logotipo de ElGato"
             ),
+            rx.spacer(),
             link_sponsors(
                 "mvp.png",
-                url = ""
+                "",
+                "Logotipo de Microsoft MVP"
             ),
-            spacing = Spacing.BIG.value
+            spacing = Spacing.BIG.value,
+            flex_direction=["column", "row"]
         ),
         width = "100%",
-        align_items = "start"
+        align_items="start",
+        spacing=Spacing.SMALL.value
     )

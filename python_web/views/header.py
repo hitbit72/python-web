@@ -31,17 +31,20 @@ def header() -> rx.Component:
                     "@hitbit72",
                     margin_top = Size.ZERO.value,
                     margin_bottom = Size.MEDIUM.value,
-                    color = TextColor.BODY.value
+                    color = Color.PRIMARY.value
                 ),
                 rx.hstack(
-                    link_icon("icons/youtube.svg", "https://www.google.com"),
-                    link_icon("icons/github.svg", "https://github.com/hitbit72"),
-                    link_icon("icons/twitch.svg", "https://www.google.com"),
+                    link_icon("/icons/youtube.svg", "https://www.youtube.com", "Youtube"),
+                    link_icon("/icons/github.svg", "https://github.com/hitbit72", "Github"),
+                    link_icon("/icons/twitch.svg", "https://www.twitch.com", "Twitch"),
+                    link_icon("/icons/instagram.svg", "https://www.instagram.com/", "Instagram"),
+                    link_icon("/icons/tiktok.svg", "https://www.tiktok.com/es/", "TikTok")
                 ),
                 align_items="start",
-                spacing=Spacing.VERY_SMALL.value,
+                spacing=Spacing.ZERO.value,
             ),
-            spacing=Spacing.BIG.value,
+            spacing=Spacing.MEDIUM.value,
+            #column_gap = "20px"
         ),
         rx.flex(
             info_text("+3", "Años de experiencia"),
@@ -57,6 +60,6 @@ def header() -> rx.Component:
             color = TextColor.BODY.value,
             font_size = Size.MEDIUM.value
         ),
-        spacing=Spacing.BIG.value,
+        spacing=Spacing.MEDIUM.value,
         align_items="start"
     )

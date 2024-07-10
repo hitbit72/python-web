@@ -6,7 +6,7 @@ from python_web.styles.styles import Spacing as Spacing
 
 def links() -> rx.Component:
     return rx.vstack(
-        title("Comnidad"),
+        title("Comunidad"),
         link_button(
             "Linkedin",
             "datos de linkedin",
@@ -15,7 +15,7 @@ def links() -> rx.Component:
         ),
         link_button(
             "Youtube",
-            "canal principal",
+            "Tutoriales sobre programación de lunes a viernes",
             "icons/youtube.svg",
             "https://www.youtube.com"
         ),
@@ -48,7 +48,7 @@ def links() -> rx.Component:
         link_button(
             "MyPublicInbox",
             "Respuesta rápida y con preferencia",
-            "icons/email.svg",
+            "icons/checkemail.svg",
             "https://www.youtube.com"
         ),
         link_button(
