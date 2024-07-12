@@ -8,13 +8,13 @@ def sponsors() -> rx.Component:
         title("Colaboran"),
         rx.flex(
             link_sponsors(
-                "elgato.png",
+                "/elgato.png",
                 "",
                 "Logotipo de ElGato"
             ),
             rx.spacer(),
             link_sponsors(
-                "mvp.png",
+                "/mvp.png",
                 "",
                 "Logotipo de Microsoft MVP"
             ),

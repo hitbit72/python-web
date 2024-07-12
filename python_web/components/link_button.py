@@ -3,7 +3,7 @@ import python_web.styles.styles as styles
 from python_web.styles.styles import Size as Size
 from python_web.styles.styles import Spacing as Spacing
 
-def link_button(title: str, body: str, image: str, url: str) -> rx.Component:
+def link_button(title: str, body: str, image: str, url: str, is_externa = True) -> rx.Component:
     return rx.link(
         rx.button(
             rx.hstack(
@@ -36,7 +36,7 @@ def link_button(title: str, body: str, image: str, url: str) -> rx.Component:
             ),
         ),
         href=url,
-        is_external=True,
+        is_external=is_externa,
         width = "100%"
     )
 
