@@ -61,9 +61,9 @@ def baseHead(details) -> rx.Component:
             rx.flex(
                 info_text("3+", "Años de experiencia"),
                 rx.spacer(),
-                info_text("50+", "Aplicaciones creadas"),
+                info_text("10+", "Aplicaciones creadas"),
                 rx.spacer(),
-                info_text("500+", "Seguidores"),
+                info_text("20+", "Seguidores"),
                 width="100%"
             ),
             rx.text(

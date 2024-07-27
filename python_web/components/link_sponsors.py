@@ -5,7 +5,7 @@ def link_sponsors(imagen: str, url: str, alt = "") -> rx.Component:
     return rx.link(
         rx.image(
             src = imagen,
-            height = Size.VERY_BIG.value,
+            height = Size.DUMBO.value,
             width = "auto",
             alt = alt
         ),

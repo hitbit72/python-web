@@ -28,6 +28,8 @@ class Size(Enum):
     BIG_MEDIUM = "1.5em"
     BIG = "2em"
     VERY_BIG = "4em"
+    DUMBO = "6em"
+    JUMBO = "8em"
 
 #Spacing
 class Spacing(Enum):
