@@ -8,14 +8,15 @@ from python_web.styles.colors import Color as Color
 from python_web.styles.colors import TextColor as TextColor
 from python_web.styles.fonts import Font as Font
 
-def header() -> rx.Component:
+
+def header(details = True) -> rx.Component:
     return rx.vstack(
         rx.hstack(
             rx.avatar(
-                #fallback="JT",
+                fallback="JT",
                 radius="full",
                 size=Spacing.BIG.value,
-                src = "avatar.jpg",
+                src = "/avatar.jpg",
                 color = TextColor.BODY.value,
                 bg = Color.CONTENT.value,
                 padding = "2px",
@@ -31,32 +32,47 @@ def header() -> rx.Component:
                     "@hitbit72",
                     margin_top = Size.ZERO.value,
                     margin_bottom = Size.MEDIUM.value,
-                    color = TextColor.BODY.value
+                    color = Color.PRIMARY.value
                 ),
                 rx.hstack(
-                    link_icon("icons/youtube.svg", "https://www.google.com"),
-                    link_icon("icons/github.svg", "https://github.com/hitbit72"),
-                    link_icon("icons/twitch.svg", "https://www.google.com"),
+                    link_icon("/icons/youtube.svg", "https://www.youtube.com", "Youtube"),
+                    link_icon("/icons/github.svg", "https://github.com/hitbit72", "Github"),
+                    link_icon("/icons/twitch.svg", "https://www.twitch.com", "Twitch"),
+                    link_icon("/icons/instagram.svg", "https://www.instagram.com/", "Instagram"),
+                    link_icon("/icons/tiktok.svg", "https://www.tiktok.com/es/", "TikTok")
                 ),
                 align_items="start",
-                spacing=Spacing.VERY_SMALL.value,
+                spacing=Spacing.ZERO.value,
             ),
-            spacing=Spacing.BIG.value,
-        ),
-        rx.flex(
-            info_text("+3", "Años de experiencia"),
-            rx.spacer(),
-            info_text("+50", "Aplicaciones creadas"),
-            rx.spacer(),
-            info_text("1k", "Seguidores"),
+            spacing=Spacing.MEDIUM.value,
             width="100%"
+            #column_gap = "20px"
         ),
-        rx.text(
-            """Soy programador freelance full-stack de python y PHP desde hace más de 5 años.
-            Aquí podrás encontrar todos mis enlaces de interés. Bienbenid@s""",
-            color = TextColor.BODY.value,
-            font_size = Size.MEDIUM.value
-        ),
-        spacing=Spacing.BIG.value,
-        align_items="start"
+        baseHead(details),
+        spacing=Spacing.MEDIUM.value,
+        align_items="start",
     )
+
+
+
+def baseHead(details) -> rx.Component:
+    if details:
+        return rx.box(
+            rx.flex(
+                info_text("3+", "Años de experiencia"),
+                rx.spacer(),
+                info_text("10+", "Aplicaciones creadas"),
+                rx.spacer(),
+                info_text("20+", "Seguidores"),
+                width="100%"
+            ),
+            rx.text(
+                """Soy programador freelance full-stack de python y PHP desde hace más de 5 años.
+                Aquí podrás encontrar todos mis enlaces de interés. Bienbenid@s""",
+                color = TextColor.BODY.value,
+                font_size = Size.MEDIUM.value,
+                margin_top = Size.DEFAULT.value
+            ),
+         width="100%",
+        )
+    return rx.box()

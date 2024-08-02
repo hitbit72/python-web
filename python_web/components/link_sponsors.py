@@ -1,11 +1,13 @@
 import reflex as rx
 from python_web.styles.styles import Size as Size
 
-def link_sponsors(imagen: str, url: str) -> rx.Component:
+def link_sponsors(imagen: str, url: str, alt = "") -> rx.Component:
     return rx.link(
         rx.image(
-            height = Size.VERY_BIG.value,
-            src = imagen
+            src = imagen,
+            height = Size.DUMBO.value,
+            width = "auto",
+            alt = alt
         ),
         href=url,
         is_external=True
