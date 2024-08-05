@@ -68,11 +68,17 @@ def baseHead(details) -> rx.Component:
             ),
             rx.text(
                 """Soy programador freelance full-stack de python y PHP desde hace más de 5 años.
-                Aquí podrás encontrar todos mis enlaces de interés. Bienbenid@s""",
+                Aquí podrás encontrar todos mis enlaces de interés. Bienbenid@s.""",
                 color = TextColor.BODY.value,
                 font_size = Size.MEDIUM.value,
                 margin_top = Size.DEFAULT.value
             ),
-         width="100%",
+            rx.text(
+                "* WEB creada con fines de aprendizaje.",
+                color = TextColor.BODY.value,
+                font_size = Size.DEFAULT.value,
+                margin_top = Size.DEFAULT.value
+            ),
+            width="100%",
         )
     return rx.box()
