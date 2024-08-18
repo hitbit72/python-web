@@ -7,4 +7,5 @@
 
 ### Proyecto original realizado por [mouredev](https://github.com/mouredev) durante emisiones en directo desde [Twitch](https://twitch.tv/mouredev)
 
-[Youtube](https://www.youtube.com/watch?v=n2YrGsXJC6Y)
+[Video 1](https://www.youtube.com/watch?v=n2YrGsXJC6Y)
+[Video 2](https://www.youtube.com/watch?v=bNy8OZJfA6I&t=216s)
