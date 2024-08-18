@@ -9,24 +9,26 @@ def links() -> rx.Component:
     return rx.vstack(
         title("Cursos gratis"),
         link_button(
-            "Curso Pyhton",
+            "Curso Python Web",
             "Aprende Python desde cero de forma muy facil",
-            "/icons/discord.svg",
-            Route.COURSES.value,
-            is_externa=False
+            "/python_highlighted.png",
+            "https://www.youtube.com/watch?v=n2YrGsXJC6Y&t=1s",
+            is_externa=True
         ),
         link_button(
-            "Retos de programación",
-            "Ruta de estudio semanal para practicar lógica de programación",
-            "/icons/linkedin.svg",
-            "https://www.linkedin.com/in/jtl-35b901294/"
+            "Curso de python WEB avanzado",
+            "Python web avanzado, API REST, Docker, PostgreSQL...",
+            "/python_highlighted.png",
+            "https://www.youtube.com/watch?v=bNy8OZJfA6I&t=1206s",
+            is_externa=True
         ),
         title("Mucho más en"),
         link_button(
-            "Youtube",
+            "@mouredev by Brais Moure",
             "Tutoriales sobre programación de lunes a viernes",
             "/icons/youtube.svg",
-            "https://www.youtube.com"
+            "https://www.youtube.com/@mouredev/featured",
+            is_externa=True
         ),
         width = "100%",
         spacing=Spacing.SMALL.value
