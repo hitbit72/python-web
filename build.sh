@@ -1,6 +1,7 @@
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 .\.venv\Scripts\activate
 pip install --upgrade pip
-pip install -r requeriments.txt
+pip install -r requirements.txt
 reflex init
 reflex export --frontend-only
 rm -rf public
