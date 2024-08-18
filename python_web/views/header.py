@@ -35,11 +35,26 @@ def header(details = True) -> rx.Component:
                     color = Color.PRIMARY.value
                 ),
                 rx.hstack(
-                    link_icon("/icons/youtube.svg", "https://www.youtube.com", "Youtube"),
-                    link_icon("/icons/github.svg", "https://github.com/hitbit72", "Github"),
-                    link_icon("/icons/twitch.svg", "https://www.twitch.com", "Twitch"),
-                    link_icon("/icons/instagram.svg", "https://www.instagram.com/", "Instagram"),
-                    link_icon("/icons/tiktok.svg", "https://www.tiktok.com/es/", "TikTok")
+                    link_icon(
+                        "/icons/youtube.svg",
+                        "https://www.youtube.com",
+                        "Youtube"),
+                    link_icon(
+                        "/icons/github.svg",
+                        "https://github.com/hitbit72",
+                        "Github"),
+                    link_icon(
+                        "/icons/twitch.svg",
+                        "https://www.twitch.com",
+                        "Twitch"),
+                    link_icon(
+                        "/icons/instagram.svg",
+                        "https://www.instagram.com/",
+                        "Instagram"),
+                    link_icon(
+                        "/icons/tiktok.svg",
+                        "https://www.tiktok.com/es/",
+                        "TikTok")
                 ),
                 align_items="start",
                 spacing=Spacing.ZERO.value,
@@ -48,31 +63,29 @@ def header(details = True) -> rx.Component:
             width="100%"
             #column_gap = "20px"
         ),
-        baseHead(details),
+        rx.cond(
+            details,
+            rx.box(
+                rx.flex(
+                    info_text("3+", "Años de experiencia"),
+                    rx.spacer(),
+                    info_text("10+", "Aplicaciones creadas"),
+                    rx.spacer(),
+                    info_text("20+", "Seguidores"),
+                    width="100%"
+                ),
+                rx.text(
+                    """Soy programador freelance full-stack de python y PHP desde hace más de 5 años.
+                    Aquí podrás encontrar todos mis enlaces de interés. Bienbenid@s""",
+                    color = TextColor.BODY.value,
+                    font_size = Size.MEDIUM.value,
+                    margin_top = Size.DEFAULT.value
+            ),
+            width="100%",
+            )
+        ),
         spacing=Spacing.MEDIUM.value,
         align_items="start",
     )
 
 
-
-def baseHead(details) -> rx.Component:
-    if details:
-        return rx.box(
-            rx.flex(
-                info_text("3+", "Años de experiencia"),
-                rx.spacer(),
-                info_text("10+", "Aplicaciones creadas"),
-                rx.spacer(),
-                info_text("20+", "Seguidores"),
-                width="100%"
-            ),
-            rx.text(
-                """Soy programador freelance full-stack de python y PHP desde hace más de 5 años.
-                Aquí podrás encontrar todos mis enlaces de interés. Bienbenid@s""",
-                color = TextColor.BODY.value,
-                font_size = Size.MEDIUM.value,
-                margin_top = Size.DEFAULT.value
-            ),
-         width="100%",
-        )
-    return rx.box()

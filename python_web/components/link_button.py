@@ -18,17 +18,17 @@ def link_button(title: str, body: str, image: str, url: str, is_externa = True) 
                     rx.text(
                         title,
                         size = Spacing.SMALL.value,
-                        style=styles.button_title_style
+                        style= styles.button_title_style
                     ),
                     rx.text(
                         body,
                         size = Spacing.SMALL.value,
-                        style=styles.button_body_style
+                        style= styles.button_body_style,
                     ),
                     align_items = "start",
                     spacing = Spacing.VERY_SMALL.value,
-                    padding_y=Size.SMALL.value,
-                    padding_right = Size.SMALL.value
+                    padding_y=Size.VERY_SMALL.value,
+                    padding_right = Size.VERY_SMALL.value
                     #margin = Size.ZERO.value
                 ),
                 align="center",

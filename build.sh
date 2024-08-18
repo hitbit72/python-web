@@ -4,6 +4,6 @@ pip install -r requeriments.txt
 reflex init
 reflex export --frontend-only
 rm -rf public
-unzip frontend.zip -d public
+rar x frontend.zip public\
 rm -f frontend.zip
 deactivate

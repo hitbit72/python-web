@@ -24,7 +24,7 @@ def sponsors() -> rx.Component:
                 "https://www.credly.com/badges/8e46806f-c34f-4ebc-bb25-153fb5312676/public_url",
                 "Insignia Web Development with Python"
             ),
-            spacing = Spacing.BIG.value,
+            spacing = Spacing.DEFAULT.value,
             flex_direction=["column", "row"]
         ),
         width = "100%",
